@@ -1,0 +1,263 @@
+.footer {
+  background: #ffffff;
+
+  &__content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 70px 0 50px 0;
+  }
+
+  &__info {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    &-logo {
+      height: 40px;
+      display: flex;
+      object-fit: contain;
+    }
+
+    &-text {
+      color: var(--Gray-600, #475467);
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 24px; /* 150% */
+
+      span {
+        color: var(--Main-color, #0c67c9);
+        font-size: 24px;
+        font-weight: 700;
+      }
+    }
+  }
+
+  &__actions {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 10px;
+    width: 30%;
+  }
+
+  &__action {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    color: var(--Gray-600, #475467);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px; /* 150% */
+    transition: 0.3s;
+
+    &:hover {
+      opacity: 0.7;
+    }
+
+    span {
+      color: var(--Gray-500, #667085);
+      font-size: 14px;
+      line-height: 20px; /* 142.857% */
+    }
+  }
+
+  &__copyright {
+    border-top: 1px solid #e8e8e8;
+    padding: 30px 0;
+
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    &-label {
+      color: var(--Gray-500, #667085);
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 24px; /* 150% */
+    }
+
+    &-socials {
+      display: flex;
+      gap: 25px;
+    }
+  }
+
+  &__social {
+    transition: 0.3s;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+}
+
+.gmx-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: auto;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 26px;
+  background: grey;
+
+  &__text {
+    color: #fff;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%; /* 19.6px */
+    letter-spacing: 0.14px;
+  }
+
+  //   Colors
+  &.gmx-blue {
+    background: #219ed9;
+  }
+  &.gmx-green {
+    background: #26d366;
+  }
+
+  //   Sizes
+  &.gmx-large {
+    padding: 13px 30px;
+
+    .gmx-btn__text {
+      font-size: 20px;
+    }
+  }
+
+  //   Conditions
+  &:hover {
+    transform: scale(1.035);
+  }
+
+  &:active {
+    transform: scale(1);
+  }
+}
+
+// ----------------- Promo
+.promo {
+  border-radius: 80px;
+  background: #090909;
+  padding: 35px 100px;
+  position: relative;
+  margin: 50px 0 0 0;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 10px;
+    padding: 0 30% 0 0;
+  }
+
+  &__image {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    overflow: hidden;
+    height: 120%;
+    width: 45%;
+
+    &-file {
+      //   opacity: 0;
+      transform: rotate(4deg);
+      position: absolute;
+      top: 60px;
+      left: 0;
+    }
+  }
+
+  &__pretitle {
+    color: var(--green, #399919);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px; /* 137.5% */
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0 0 0 5px;
+
+    span {
+      display: flex;
+      width: 8px;
+      height: 8px;
+      background: #399919;
+      border-radius: 100%;
+      position: relative;
+
+      &::after {
+        content: "";
+        border-radius: 100%;
+        border: 1px solid #399919;
+        width: 12px;
+        flex-shrink: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 12px;
+      }
+    }
+  }
+
+  &__title {
+    color: #fff;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 48px; /* 117.341% */
+  }
+
+  &__actions {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin: 15px 0;
+  }
+
+  &__textlink {
+    color: #fff;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px; /* 137.5% */
+    transition: 0.3s;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 0.6;
+    }
+  }
+
+  &__subscribe {
+    color: #6cadff;
+    text-align: center;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 142.857% */
+    transition: 0.3s;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 0.6;
+    }
+  }
+}

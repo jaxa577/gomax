@@ -184,6 +184,10 @@ body {
   gap: 52px;
 }
 
+.modules {
+  margin: 0 0 45px 0;
+}
+
 .modules__container {
   display: flex;
   flex-direction: column;
@@ -253,4 +257,91 @@ body {
   font-size: 32px;
   line-height: 125%;
   color: #222222;
+}
+
+.stats {
+  margin: 0 0 45px 0;
+}
+
+.stats__container {
+  display: flex;
+  align-items: stretch;
+  gap: 24px;
+}
+
+.stats__desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+  width: 36%;
+}
+
+.stats__title {
+  font-size: 28px;
+  line-height: 145%;
+}
+.stats__title span {
+  color: #0c67c9;
+}
+
+.stats__desc-extra {
+  display: flex;
+  align-items: stretch;
+  gap: 16px;
+}
+.stats__desc-extra p {
+  font-size: 20px;
+  line-height: 125%;
+  color: #000;
+  opacity: 0.4;
+}
+
+.stats__desc-extra-year {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 5px;
+}
+.stats__desc-extra-year p {
+  width: 110px;
+}
+.stats__desc-extra-year span {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 125%;
+  color: #0c67c9;
+}
+
+.stats__desc-extra-line {
+  display: block;
+  height: 100%;
+  background: #e5ecf3;
+  width: 1px;
+}
+
+.stats__list {
+  display: flex;
+  gap: 8px;
+  width: 64%;
+}
+
+.stats__item {
+  padding: 24px;
+  background: #f5f7fa;
+  border-radius: 24px;
+  width: 33.3%;
+}
+.stats__item h3 {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 125%;
+  color: #000;
+  margin: 0 0 24px;
+}
+.stats__item p {
+  font-size: 16px;
+  line-height: 125%;
+  color: #000;
+  opacity: 0.4;
 }/*# sourceMappingURL=common.css.map */

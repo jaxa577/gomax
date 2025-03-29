@@ -1,8 +1,49 @@
+body {
+  padding: 72px 0 0;
+}
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  background: #fff;
+}
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 72px;
+}
+.header__logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.header__actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.header__lang {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 10px 8px;
+  background: #eaecf0;
+  border-radius: 200px;
+  cursor: pointer;
+}
+.header__phone {
+  font-size: 20px;
+  font-weight: 700;
+  color: #000;
+}
+
+// ----------------- Hero
 .hero {
   overflow: hidden;
-  background: red;
-}
-.hero__container {
+  padding: 130px 0 104px 0;
 }
 .container {
   max-width: 1200px;
@@ -22,9 +63,28 @@
 .hero__text {
   font-size: 20px;
   line-height: 125%;
+  color: #000;
+  opacity: 0.4;
 }
 .hero__title {
   font-weight: 700;
   font-size: 43px;
   line-height: 125%;
+  color: #000;
+}
+
+// ----------------- Partners
+
+.partners {
+  padding: 45px 0;
+}
+.partners__container {
+}
+.partners__list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 52px;
+}
+.partners__item {
 }

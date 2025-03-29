@@ -79,7 +79,7 @@ input::-webkit-inner-spin-button {
   margin: 0;
 }
 
-input[type="number"] {
+input[type=number] {
   -moz-appearance: textfield;
 }
 
@@ -99,6 +99,7 @@ body {
   width: 100%;
   z-index: 10;
   background: #fff;
+  border-bottom: 1px solid #eaecf0;
 }
 
 .header__container {
@@ -366,7 +367,7 @@ body {
   height: 40px;
   display: flex;
   -o-object-fit: contain;
-  object-fit: contain;
+     object-fit: contain;
 }
 .footer__info-text {
   color: var(--Gray-600, #475467);
@@ -572,4 +573,4 @@ body {
 }
 .promo__subscribe:hover {
   opacity: 0.6;
-} /*# sourceMappingURL=common.css.map */
+}/*# sourceMappingURL=common.css.map */

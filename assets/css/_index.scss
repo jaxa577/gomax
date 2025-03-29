@@ -1,0 +1,30 @@
+.hero {
+  overflow: hidden;
+  background: red;
+}
+.hero__container {
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.hero__layer {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 270px;
+  height: 270px;
+  background: #4a91de;
+  filter: blur(300px);
+}
+.hero__text {
+  font-size: 20px;
+  line-height: 125%;
+}
+.hero__title {
+  font-weight: 700;
+  font-size: 43px;
+  line-height: 125%;
+}

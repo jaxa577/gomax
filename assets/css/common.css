@@ -97,7 +97,7 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 10;
+  z-index: 999;
   background: #fff;
   border-bottom: 1px solid #eaecf0;
 }
@@ -113,6 +113,36 @@ body {
   display: flex;
   align-items: center;
   gap: 10px;
+}
+
+.header__burger-btn {
+  width: 40px;
+  height: 40px;
+  position: relative;
+}
+.header__burger-btn .header__burger-open {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transition: all 0.3s;
+  opacity: 1;
+  transform: translate(-50%, -50%) rotate(0);
+}
+.header__burger-btn .header__burger-close {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transition: all 0.3s;
+  opacity: 0;
+  transform: translate(-50%, -50%) rotate(180deg);
+}
+.header__burger-btn.active .header__burger-open {
+  opacity: 0;
+  transform: translate(-50%, -50%) rotate(180deg);
+}
+.header__burger-btn.active .header__burger-close {
+  opacity: 1;
+  transform: translate(-50%, -50%) rotate(0);
 }
 
 .header__actions {
@@ -135,6 +165,81 @@ body {
   font-size: 20px;
   font-weight: 700;
   color: #000;
+}
+
+.nav__overlay {
+  position: fixed;
+  top: 72px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 100;
+  transform: translateY(calc(-100% - 72px));
+  transition: all 0.3s ease-in-out;
+}
+.nav__overlay.active {
+  transform: translateY(0);
+}
+
+.header__nav {
+  position: fixed;
+  top: 72px;
+  left: 0;
+}
+
+.nav__overlay-container {
+  position: relative;
+  background: #fff;
+}
+
+.header__nav-modules {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding: 32px 15px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header__nav-module {
+  padding: 16px;
+  border-radius: 24px;
+  background: #f5f7fa;
+  transition: all 0.3s;
+  width: calc(25% - 12px);
+}
+.header__nav-module:hover {
+  background: #0c67c9;
+}
+.header__nav-module:hover h3 {
+  color: #fff;
+}
+.header__nav-module:hover p {
+  color: #fff;
+  opacity: 0.8;
+}
+.header__nav-module:hover img {
+  filter: brightness(0) invert(1);
+}
+.header__nav-module img {
+  transition: all 0.3s;
+}
+.header__nav-module h3 {
+  font-size: 20px;
+  line-height: 125%;
+  font-weight: 600;
+  margin: 0 0 8px;
+  color: #000;
+  transition: all 0.3s;
+}
+.header__nav-module p {
+  font-size: 16px;
+  line-height: 125%;
+  color: #6a6f79;
+  margin: 0 0 24px;
+  transition: all 0.3s;
 }
 
 .hero {

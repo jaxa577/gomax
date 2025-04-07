@@ -4,7 +4,10 @@
     <meta charset="UTF-8" />
     <link
       rel="stylesheet"
-      href="/assets/css/common.css" />
+      href="/assets/css/index/common.css" />
+    <link
+      rel="stylesheet"
+      href="/assets/css/global/swiper-bundle.min.css" />
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1.0" />
@@ -17,16 +20,17 @@
           <button class="header__burger-btn">
             <img
               class="header__burger-open"
-              src="./assets/icons/burger.svg"
+              src="/assets/icons/burger.svg"
               alt="" />
             <img
               class="header__burger-close"
-              src="./assets/icons/remove.svg"
+              src="/assets/icons/remove.svg"
               alt="" />
           </button>
           <a href="./index.html">
             <img
-              src="./assets/images/gomax-logo.png"
+              class="header__logo-img"
+              src="/assets/images/gomax-logo.png"
               alt="" />
           </a>
         </div>
@@ -34,12 +38,12 @@
         <div class="header__actions">
           <div class="header__lang">
             <img
-              src="./assets/icons/lang.svg"
+              src="/assets/icons/lang.svg"
               alt="" />
             <span>RU</span>
             <span>
               <img
-                src="./assets/icons/chevron-down.svg"
+                src="/assets/icons/chevron-down.svg"
                 alt="" />
             </span>
           </div>
@@ -63,7 +67,7 @@
             <p>автоматизация медицинских учреждений</p>
             <div class="header__nav-module-img">
               <img
-                src="./assets/icons/gomed-icon.svg"
+                src="/assets/icons/gomed-icon.svg"
                 alt="" />
             </div>
           </a>
@@ -74,7 +78,7 @@
             <p>производственная автоматизация</p>
             <div class="header__nav-module-img">
               <img
-                src="./assets/icons/gomax-icon.svg"
+                src="/assets/icons/gomax-icon.svg"
                 alt="" />
             </div>
           </a>
@@ -85,7 +89,7 @@
             <p>система учета магазина на основе GOMAX</p>
             <div class="header__nav-module-img">
               <img
-                src="./assets/icons/retail-icon.svg"
+                src="/assets/icons/retail-icon.svg"
                 alt="" />
             </div>
           </a>
@@ -96,7 +100,7 @@
             <p>складской учет на основе GOMAX</p>
             <div class="header__nav-module-img">
               <img
-                src="./assets/icons/wms-icon.svg"
+                src="/assets/icons/wms-icon.svg"
                 alt="" />
             </div>
           </a>
@@ -107,7 +111,7 @@
             <p>для ведения учета и процесса постпродажи новостроек</p>
             <div class="header__nav-module-img">
               <img
-                src="./assets/icons/gohouse-icon.svg"
+                src="/assets/icons/gohouse-icon.svg"
                 alt="" />
             </div>
           </a>
@@ -118,7 +122,7 @@
             <p>для ведения учет строительства</p>
             <div class="header__nav-module-img">
               <img
-                src="./assets/icons/contructor-icon.svg"
+                src="/assets/icons/contructor-icon.svg"
                 alt="" />
             </div>
           </a>
@@ -129,7 +133,7 @@
             <p>автоматизация кадрового отдела</p>
             <div class="header__nav-module-img">
               <img
-                src="./assets/icons/gohr-icon.svg"
+                src="/assets/icons/gohr-icon.svg"
                 alt="" />
             </div>
           </a>
@@ -140,13 +144,14 @@
             <p>Комплексное решение для логистики</p>
             <div class="header__nav-module-img">
               <img
-                src="./assets/icons/cargo-icon.svg"
+                src="/assets/icons/cargo-icon.svg"
                 alt="" />
             </div>
           </a>
         </div>
       </div>
     </div>
+
     <main class="main">
       <section class="hero">
         <div class="hero__container container">
@@ -158,46 +163,48 @@
 
       <section class="partners">
         <div class="partners__container">
-          <div class="partners__list">
-            <div class="partners__item">
-              <img
-                src="./assets/images/partner1.png"
-                alt="" />
-            </div>
-            <div class="partners__item">
-              <img
-                src="./assets/images/partner2.png"
-                alt="" />
-            </div>
-            <div class="partners__item">
-              <img
-                src="./assets/images/partner3.png"
-                alt="" />
-            </div>
-            <div class="partners__item">
-              <img
-                src="./assets/images/partner4.png"
-                alt="" />
-            </div>
-            <div class="partners__item">
-              <img
-                src="./assets/images/partner5.png"
-                alt="" />
-            </div>
-            <div class="partners__item">
-              <img
-                src="./assets/images/partner6.png"
-                alt="" />
-            </div>
-            <div class="partners__item">
-              <img
-                src="./assets/images/partner7.png"
-                alt="" />
-            </div>
-            <div class="partners__item">
-              <img
-                src="./assets/images/partner8.png"
-                alt="" />
+          <div class="gmx-swiper swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide partners__item">
+                <img
+                  src="/assets/images/partner1.png"
+                  alt="" />
+              </div>
+              <div class="swiper-slide partners__item">
+                <img
+                  src="/assets/images/partner2.png"
+                  alt="" />
+              </div>
+              <div class="swiper-slide partners__item">
+                <img
+                  src="/assets/images/partner3.png"
+                  alt="" />
+              </div>
+              <div class="swiper-slide partners__item">
+                <img
+                  src="/assets/images/partner4.png"
+                  alt="" />
+              </div>
+              <div class="swiper-slide partners__item">
+                <img
+                  src="/assets/images/partner5.png"
+                  alt="" />
+              </div>
+              <div class="swiper-slide partners__item">
+                <img
+                  src="/assets/images/partner6.png"
+                  alt="" />
+              </div>
+              <div class="swiper-slide partners__item">
+                <img
+                  src="/assets/images/partner7.png"
+                  alt="" />
+              </div>
+              <div class="swiper-slide partners__item">
+                <img
+                  src="/assets/images/partner8.png"
+                  alt="" />
+              </div>
             </div>
           </div>
         </div>
@@ -211,7 +218,7 @@
 
               <div class="module__box-img">
                 <img
-                  src="./assets/images/module1.png"
+                  src="/assets/images/module1.png"
                   alt="" />
               </div>
             </div>
@@ -220,7 +227,7 @@
 
               <div class="module__box-img">
                 <img
-                  src="./assets/images/module2.png"
+                  src="/assets/images/module2.png"
                   alt="" />
               </div>
             </div>
@@ -231,7 +238,7 @@
 
             <div class="module__box-img">
               <img
-                src="./assets/images/module3.png"
+                src="/assets/images/module3.png"
                 alt="" />
             </div>
           </div>
@@ -242,7 +249,7 @@
 
               <div class="module__box-img">
                 <img
-                  src="./assets/images/module4.png"
+                  src="/assets/images/module4.png"
                   alt="" />
               </div>
             </div>
@@ -251,7 +258,7 @@
 
               <div class="module__box-img">
                 <img
-                  src="./assets/images/module5.png"
+                  src="/assets/images/module5.png"
                   alt="" />
               </div>
             </div>
@@ -262,7 +269,7 @@
 
             <div class="module__box-img">
               <img
-                src="./assets/images/module6.png"
+                src="/assets/images/module6.png"
                 alt="" />
             </div>
           </div>
@@ -273,7 +280,7 @@
 
               <div class="module__box-img">
                 <img
-                  src="./assets/images/module7.png"
+                  src="/assets/images/module7.png"
                   alt="" />
               </div>
             </div>
@@ -282,7 +289,7 @@
 
               <div class="module__box-img">
                 <img
-                  src="./assets/images/module8.png"
+                  src="/assets/images/module8.png"
                   alt="" />
               </div>
             </div>
@@ -328,29 +335,31 @@
 
       <section class="promo">
         <div class="promo__content container">
-          <span class="promo__pretitle">
-            <span></span>
-            НАЧНИТЕ ПРЯМО СЕЙЧАС
-          </span>
-          <h2 class="promo__title">Разблокируйте новые возможности своего бизнеса в GoMax прямо сейчас</h2>
-          <div class="promo__actions">
+          <div class="promo__desc">
+            <span class="promo__pretitle">
+              <span></span>
+              НАЧНИТЕ ПРЯМО СЕЙЧАС
+            </span>
+            <h2 class="promo__title">Разблокируйте новые возможности своего бизнеса в GoMax прямо сейчас</h2>
+            <div class="promo__actions">
+              <a
+                href="#!"
+                target="_blank"
+                class="gmx-btn gmx-green gmx-large">
+                <p class="gmx-btn__text">Получить полный доступ на 14 дней</p>
+              </a>
+              <a
+                href="#!"
+                class="promo__textlink">
+                Тариф «Профессиональный»
+              </a>
+            </div>
             <a
               href="#!"
-              target="_blank"
-              class="gmx-btn gmx-green gmx-large">
-              <p class="gmx-btn__text">Получить полный доступ на 14 дней</p>
-            </a>
-            <a
-              href="#!"
-              class="promo__textlink">
-              Тариф «Профессиональный»
+              class="promo__subscribe">
+              Записаться на демо
             </a>
           </div>
-          <a
-            href="#!"
-            class="promo__subscribe">
-            Записаться на демо
-          </a>
 
           <div class="promo__image">
             <img
@@ -361,70 +370,73 @@
         </div>
       </section>
     </main>
+
     <footer class="footer">
-      <div class="footer__content container">
-        <div class="footer__info">
-          <a
-            href="#!"
-            class="footer__info-logo">
-            <img
-              src="/assets/images//gomax-logo.png"
-              alt="logo" />
-          </a>
-          <p class="footer__info-text">
-            Команда GOOD ONE работает на рынке уже
-            <span>10 лет</span>
-            , реализовала более
-            <span>1000</span>
-            успешных проектов и продолжает помогать бизнесу расти и развиваться.
-          </p>
+      <div class="container">
+        <div class="footer__content">
+          <div class="footer__info">
+            <a
+              href="#!"
+              class="footer__info-logo">
+              <img
+                src="/assets/images//gomax-logo.png"
+                alt="logo" />
+            </a>
+            <p class="footer__info-text">
+              Команда GOOD ONE работает на рынке уже
+              <span>10 лет</span>
+              , реализовала более
+              <span>1000</span>
+              успешных проектов и продолжает помогать бизнесу расти и развиваться.
+            </p>
+          </div>
+          <div class="footer__actions">
+            <a
+              href="#!"
+              class="footer__action">
+              <span class="footer__action-label">Адрес</span>
+              11335, Мирзо Улугбек район, улица
+            </a>
+            <a
+              href="#!"
+              target="_blank"
+              class="gmx-btn gmx-blue">
+              <p class="gmx-btn__text">Телеграмм</p>
+            </a>
+            <a
+              href="#!"
+              target="_blank"
+              class="gmx-btn gmx-green">
+              <p class="gmx-btn__text">WhatsApp</p>
+            </a>
+          </div>
         </div>
-        <div class="footer__actions">
-          <a
-            href="#!"
-            class="footer__action">
-            <span class="footer__action-label">Адрес</span>
-            11335, Мирзо Улугбек район, улица
-          </a>
-          <a
-            href="#!"
-            target="_blank"
-            class="gmx-btn gmx-blue">
-            <p class="gmx-btn__text">Телеграмм</p>
-          </a>
-          <a
-            href="#!"
-            target="_blank"
-            class="gmx-btn gmx-green">
-            <p class="gmx-btn__text">WhatsApp</p>
-          </a>
-        </div>
-      </div>
-      <div class="footer__copyright">
-        <div class="container">
-          <p class="footer__copyright-label">© 2024 Gomax. All rights reserved.</p>
-          <div class="footer__copyright-socials">
-            <a
-              href="#!"
-              class="footer__social">
-              <img
-                src="/assets/icons/instagram.svg"
-                alt="" />
-            </a>
-            <a
-              href="#!"
-              class="footer__social">
-              <img
-                src="/assets/icons/youtube.svg"
-                alt="" />
-            </a>
-            <a
-              href="#!"
-              class="footer__social">
-              <img
-                src="/assets/icons/facebook.svg"
-                alt="" />
-            </a>
+        <div class="footer__copyright">
+          <div class="container">
+            <p class="footer__copyright-label">© 2024 Gomax. All rights reserved.</p>
+            <div class="footer__copyright-socials">
+              <a
+                href="#!"
+                class="footer__social">
+                <img
+                  src="/assets/icons/instagram.svg"
+                  alt="" />
+              </a>
+              <a
+                href="#!"
+                class="footer__social">
+                <img
+                  src="/assets/icons/youtube.svg"
+                  alt="" />
+              </a>
+              <a
+                href="#!"
+                class="footer__social">
+                <img
+                  src="/assets/icons/facebook.svg"
+                  alt="" />
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -432,4 +444,7 @@
   </body>
 </html>
 
-<script src="./assets/js/index.js"></script>
+<script
+  type="module"
+  src="/assets/js/index.js"></script>
+<script src="/assets//js/swiper-bundle.min.js"></script>

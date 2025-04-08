@@ -1,0 +1,359 @@
+.basics {
+  background: #392b9c;
+  padding: 90px 0 120px 0;
+
+  &__title {
+    color: #fff;
+    font-size: 44px;
+    text-align: left;
+    font-weight: 700;
+    margin: 0 0 60px 0;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    grid-auto-rows: 250px;
+  }
+
+  .basicitem {
+    border-radius: 26px;
+    background: #3f33a7;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    height: 100%;
+    padding: 40px;
+    transition: 0.3s;
+
+    &__image {
+      width: 100%;
+      max-height: 350px;
+      object-fit: contain;
+    }
+
+    &__icon {
+      width: 120px;
+      height: 120px;
+      display: flex;
+      object-fit: contain;
+    }
+
+    &__label {
+      max-width: 90%;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+
+      color: #fff;
+      text-align: center;
+      font-size: 26px;
+      font-weight: 500;
+    }
+
+    &.bt-med {
+      grid-column: span 2;
+      flex-direction: row;
+      justify-content: space-around;
+
+      .basicitem__label {
+        width: 50%;
+        text-align: center;
+      }
+    }
+
+    &.bt-big {
+      grid-column: span 2;
+      grid-row: span 2;
+    }
+
+    &:hover {
+      transform: scale(1.025);
+    }
+  }
+}
+
+.advances {
+  padding: 90px 0;
+
+  &__content {
+    border-radius: 30px;
+    padding: 50px;
+    background: #f5f7fa;
+    display: flex;
+    align-items: flex-start;
+    gap: 50px;
+    position: relative;
+    overflow: hidden;
+
+    &::before {
+      position: absolute;
+      width: 760px;
+      height: 760px;
+      background: #392b9c;
+      content: "";
+      position: absolute;
+      display: flex;
+      bottom: -30%;
+      right: -25%;
+      border-radius: 100%;
+    }
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    width: 60%;
+  }
+
+  &__title {
+    color: #2a3140;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 42px;
+  }
+
+  &__block {
+    &-label {
+      color: #2a3140;
+      font-size: 24px;
+      font-weight: 600;
+      margin: 0 0 5px 0;
+    }
+
+    &-desc {
+      color: #6a6f79;
+      font-size: 19px;
+      font-weight: 500;
+    }
+  }
+
+  &__image {
+    width: 50%;
+    flex-shrink: 0;
+
+    &-file {
+      position: absolute;
+      bottom: -150px;
+      right: -120px;
+      width: 55%;
+    }
+  }
+}
+
+.requests {
+  background: #f5f7fa;
+  padding: 80px 0;
+
+  &__title {
+    color: #101828;
+    font-size: 44px;
+    font-weight: 700;
+    margin: 0 0 50px 0;
+  }
+
+  &__block {
+    border-radius: 30px;
+    background: #fff;
+    padding: 50px;
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+  }
+
+  &__info {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    &-title {
+      color: #2a3140;
+      font-size: 30px;
+      font-weight: 600;
+      line-height: 42px; /* 140% */
+    }
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+
+  &__image {
+    width: 50%;
+
+    &-file {
+      position: absolute;
+      animation: breathe 6s ease-in-out infinite;
+    }
+  }
+
+  .requestcard {
+    border-radius: 12px;
+    background: #f5f7fa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    padding: 25px;
+    transition: 0.3s;
+
+    &__icon {
+      width: 50px;
+      height: 50px;
+      display: flex;
+      object-fit: contain;
+    }
+
+    &:hover {
+      transform: scale(1.025);
+    }
+  }
+}
+
+.devices {
+  padding: 90px 0 50px 0;
+
+  &__title {
+    color: #000;
+    font-size: 45px;
+    font-weight: 600;
+    margin: 0 0 50px 0;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    width: 100%;
+  }
+
+  .devicecard {
+    border-radius: 24px;
+    background: #f5f7fa;
+    padding: 30px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+
+    &__image {
+      width: 250px;
+      height: 250px;
+      display: flex;
+      margin: 0 0 25px 0;
+      align-self: center;
+      object-fit: contain;
+    }
+
+    &__label {
+      color: #101828;
+      font-size: 28px;
+      font-weight: 600;
+    }
+
+    &__desc {
+      color: var(--Descri, #8b94a8);
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 140%; /* 28px */
+    }
+  }
+}
+
+.faq {
+  padding: 50px 0 100px 0;
+
+  &__title {
+    color: #000;
+    font-size: 45px;
+    font-weight: 700;
+    margin: 0 0 50px 0;
+
+    span {
+      color: #0c67c9;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .faqcard {
+    border-radius: 12px;
+    background: var(--BackgroundGray, #f5f7fa);
+    transition: 0.6s;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    max-height: 75px;
+
+    &__question {
+      height: 75px;
+      flex-shrink: 0;
+      color: #000;
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 27px; /* 135% */
+      padding: 0 100px 0 40px;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        width: 24px;
+        transition: 0.3s;
+        height: 24px;
+        background: url(/assets/icons/faq-open.svg) no-repeat center center/contain;
+        right: 30px;
+      }
+    }
+
+    &__answer {
+      width: calc(100% - 40px);
+      margin: 15px auto;
+      padding: 20px;
+      background: #eeeeee;
+      border-radius: 12px;
+      font-size: 14px;
+      line-height: 170%;
+      font-weight: 500;
+    }
+
+    &.opened {
+      max-height: 50vh;
+
+      .faqcard__question::after {
+        transform: rotate(45deg);
+      }
+    }
+  }
+}
+
+@keyframes breathe {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

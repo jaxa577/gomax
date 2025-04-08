@@ -236,38 +236,42 @@
       <section class="business">
         <div class="container business__container">
           <h2>Выберите свой тип бизнеса</h2>
-          <div class="business__tabs"></div>
+          <div
+            id="tabButtons"
+            class="business__tabs"></div>
 
-          <div class="business__content"></div>
+          <div
+            id="tabContents"
+            class="business__content"></div>
 
-          <template id="tab-btn-template">
+          <template id="tab-button-template">
             <div class="business__tab">
-              <span></span>
+              <span class="tab-btn"></span>
             </div>
           </template>
 
           <template id="tab-content-template">
-            <div class="business__tab-desc">
-              <h3></h3>
-              <p></p>
-              <div class="business__tab-advantages">
-                <div class="business__tab-advantages-item">
-                  <div class="business__tab-advantages-item-img">
-                    <img
-                      src="check.svg"
-                      alt="" />
-                  </div>
-                  <div>
-                    <h4></h4>
-                    <p></p>
+            <div class="business__tab-desc-wrapper">
+              <div class="business__tab-desc">
+                <h3></h3>
+                <p></p>
+                <div class="business__tab-advantages">
+                  <div class="business__tab-advantages-item">
+                    <div class="business__tab-advantages-item-img">
+                      <img
+                        src="/assets/icons/check.svg"
+                        alt="" />
+                    </div>
+                    <div>
+                      <h4></h4>
+                      <p></p>
+                    </div>
                   </div>
                 </div>
               </div>
 
               <div class="business__tab-footer">
-                <span class="business__tab-footer-price">
-                  <!-- от 600 000 cум/месяц -->
-                </span>
+                <span class="business__tab-footer-price"></span>
 
                 <button class="main__btn">Подробнее</button>
               </div>
@@ -282,5 +286,7 @@
         </div>
       </section>
     </main>
+
+    <script src="/assets/js/gomed.js"></script>
   </body>
 </html>

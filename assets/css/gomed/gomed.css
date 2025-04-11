@@ -596,7 +596,6 @@ html {
   background: #f5f7fa;
   margin: 0 0 90px;
 }
-
 .plans__header {
   display: flex;
   align-items: center;
@@ -610,7 +609,6 @@ html {
   color: #101828;
   max-width: 70%;
 }
-
 .plans__tab {
   display: flex;
   align-items: center;
@@ -619,7 +617,6 @@ html {
   border-radius: 200px;
   background: #fff;
 }
-
 .plans__tab-item {
   padding: 12px 26px;
   border-radius: 200px;
@@ -630,13 +627,11 @@ html {
   background: #0c67c9;
   color: #fff;
 }
-
 .plans__content {
   display: flex;
   align-items: stretch;
   gap: 20px;
 }
-
 .plans__content-info {
   width: 60%;
   min-width: 60%;
@@ -644,7 +639,6 @@ html {
   border-radius: 30px;
   padding: 32px;
 }
-
 .plans__content-header {
   display: flex;
   justify-content: space-between;
@@ -666,13 +660,11 @@ html {
   color: #6a6f79;
   width: 60%;
 }
-
 .plans__currencies {
   display: flex;
   align-items: flex-start;
   gap: 8px;
 }
-
 .plans__currencies-item {
   padding: 4px 16px;
   border-radius: 200px;
@@ -687,7 +679,6 @@ html {
 .plans__currencies-item:hover {
   opacity: 0.8;
 }
-
 .plans__content-items {
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -711,7 +702,6 @@ html {
   color: #101828;
   transition: all 0.3s ease;
 }
-
 .plans__content-users {
   display: flex;
   align-items: center;
@@ -727,7 +717,6 @@ html {
   line-height: 125%;
   color: #101828;
 }
-
 .plans__content-users-count {
   display: flex;
   align-items: center;
@@ -743,7 +732,6 @@ html {
   align-items: center;
   justify-content: center;
 }
-
 .plans__content-footer p {
   font-weight: 400;
   font-size: 18px;
@@ -757,7 +745,6 @@ html {
   line-height: 125%;
   color: #101828;
 }
-
 .plans__content-calculate {
   padding: 32px;
   background: #fff;

@@ -29,7 +29,11 @@ p {
     background: #555;
   }
 }
-
+section {
+  position: relative;
+  overflow: hidden;
+  z-index: 2;
+}
 img {
   display: -webkit-box;
   display: -ms-flexbox;

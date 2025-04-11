@@ -9,6 +9,43 @@ body {
   z-index: 999;
   background: #fff;
   border-bottom: 1px solid #eaecf0;
+  &.gohr {
+    background: #392b9c;
+    .header__logo {
+      filter: brightness(0) invert(1);
+      font-size: 32px;
+      font-weight: 700;
+    }
+    .header__lang {
+      background: #6425fd;
+      color: #fff;
+      img {
+        filter: brightness(0) invert(1);
+      }
+    }
+    .header__phone {
+      color: #fff;
+    }
+  }
+
+  &.gomed {
+    background: #0c67c9;
+    .header__logo {
+      filter: brightness(0) invert(1);
+      font-size: 32px;
+      font-weight: 700;
+    }
+    .header__lang {
+      background: #0c78ed;
+      color: #fff;
+      img {
+        filter: brightness(0) invert(1);
+      }
+    }
+    .header__phone {
+      color: #fff;
+    }
+  }
 
   &__container {
     display: flex;
@@ -84,6 +121,28 @@ body {
   transition: all 0.3s ease-in-out;
   &.active {
     transform: translateY(0);
+  }
+
+  &.gohr {
+    .header__nav-module {
+      img {
+        filter: invert(22%) sepia(95%) saturate(7489%) hue-rotate(260deg) brightness(98%) contrast(103%);
+      }
+      &:hover {
+        background: #6425fd;
+
+        h3 {
+          color: #fff;
+        }
+        p {
+          color: #fff;
+          opacity: 0.8;
+        }
+        img {
+          filter: brightness(0) invert(1);
+        }
+      }
+    }
   }
 }
 .header__nav {

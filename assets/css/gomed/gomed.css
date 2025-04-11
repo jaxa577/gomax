@@ -124,8 +124,22 @@ html {
     padding: 0 10px; /* Less padding */
   }
 }
+@keyframes pulsate {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0.6;
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1.1);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0.6;
+  }
+}
 .hero {
-  background: #0c78ed;
+  background: #0c67c9;
   padding: 90px 0 0;
   position: relative;
   height: 545px;
@@ -160,7 +174,7 @@ html {
   font-weight: 700;
   font-size: 16px;
   line-height: 125%;
-  color: #0c78ed;
+  color: #0c67c9;
   transition: 0.3s;
   cursor: pointer;
 }
@@ -786,7 +800,6 @@ html {
 .testimonials {
   margin: 0 0 90px;
 }
-
 .testimonials__header {
   display: flex;
   justify-content: space-between;
@@ -800,13 +813,11 @@ html {
   color: #101828;
   max-width: 70%;
 }
-
 .testimonials__slider-btns {
   display: flex;
   align-items: center;
   gap: 16px;
 }
-
 .testimonials__slider-btn {
   cursor: pointer;
   display: flex;
@@ -827,12 +838,10 @@ html {
 .testimonials__slider-btn:hover img {
   filter: brightness(0) invert(1);
 }
-
 .testimonials__content {
   display: flex;
   gap: 32px;
 }
-
 .testimonials__content-item {
   padding: 32px;
   background: #e5ecf3;
@@ -848,14 +857,12 @@ html {
   border-bottom: 1px solid #d3dfeb;
   margin: 0 0 32px;
 }
-
 .testimonials__content-user {
   display: flex;
   align-items: center;
   gap: 16px;
   justify-content: space-between;
 }
-
 .testimonials__content-user-info {
   display: flex;
   align-items: center;
@@ -884,7 +891,6 @@ html {
 .integrations {
   margin: 0 0 90px;
 }
-
 .integrations__container h2 {
   font-weight: 700;
   font-size: 45px;
@@ -893,7 +899,6 @@ html {
   max-width: 70%;
   margin: 0 0 40px;
 }
-
 .integrations__tabs {
   display: flex;
   align-items: center;
@@ -903,7 +908,6 @@ html {
   background: #fff;
   margin: 0 0 32px;
 }
-
 .integrations__tab {
   padding: 12px 26px;
   border-radius: 200px;
@@ -918,12 +922,10 @@ html {
 .integrations__tab:hover {
   opacity: 0.8;
 }
-
 .integrations__content {
   display: flex;
   gap: 8px;
 }
-
 .integrations-content__left {
   width: calc(33.3% - 8px);
   display: flex;
@@ -941,7 +943,6 @@ html {
 .integrations-content__left img:hover {
   transform: scale(1.05);
 }
-
 .integrations__content-middle {
   width: calc(33.3% - 8px);
 }
@@ -955,7 +956,6 @@ html {
 .integrations__content-middle img:hover {
   transform: scale(1.05);
 }
-
 .integrations-content__right {
   width: calc(33.3% - 8px);
   display: flex;
@@ -974,6 +974,119 @@ html {
   transform: scale(1.05);
 }
 
+.videos {
+  margin: 0 0 90px;
+}
+.videos__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin: 0 0 32px;
+}
+.videos__header h2 {
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 125%;
+  color: #101828;
+  max-width: 70%;
+}
+.videos__slider-btns {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.videos__slider-btn {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: #f5f7fa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.videos__content {
+  display: flex;
+  gap: 24px;
+}
+.videos__item {
+  width: calc(25% - 20px);
+  height: 465px;
+  position: relative;
+  border-radius: 24px;
+  overflow: hidden;
+}
+.videos__item-img img {
+  width: 100%;
+  height: 465px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.videos__item-play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.videos__item-play:hover {
+  transform: translate(-50%, -50%) scale(1.1);
+}
+.videos__item-play::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  animation: pulsate 3s ease-out infinite;
+  opacity: 0;
+}
+.videos__item-play img {
+  margin-left: 5px;
+}
+.videos__item-desc {
+  position: absolute;
+  bottom: 24px;
+  left: 24px;
+  z-index: 2;
+}
+.videos__item-desc h3 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 125%;
+  color: #fff;
+  margin: 0 0 8px;
+}
+.videos__item-desc p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 125%;
+  color: #fff;
+}
+.videos-item-mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(0deg, rgba(195, 44, 49, 0.1) 60%, rgba(0, 0, 0, 0.4) 100%);
+}
+
 body {
   padding: 72px 0 0;
 }
@@ -986,6 +1099,42 @@ body {
   z-index: 999;
   background: #fff;
   border-bottom: 1px solid #eaecf0;
+}
+.header.gohr {
+  background: #392b9c;
+}
+.header.gohr .header__logo {
+  filter: brightness(0) invert(1);
+  font-size: 32px;
+  font-weight: 700;
+}
+.header.gohr .header__lang {
+  background: #6425fd;
+  color: #fff;
+}
+.header.gohr .header__lang img {
+  filter: brightness(0) invert(1);
+}
+.header.gohr .header__phone {
+  color: #fff;
+}
+.header.gomed {
+  background: #0c67c9;
+}
+.header.gomed .header__logo {
+  filter: brightness(0) invert(1);
+  font-size: 32px;
+  font-weight: 700;
+}
+.header.gomed .header__lang {
+  background: #0c78ed;
+  color: #fff;
+}
+.header.gomed .header__lang img {
+  filter: brightness(0) invert(1);
+}
+.header.gomed .header__phone {
+  color: #fff;
 }
 .header__container {
   display: flex;
@@ -1060,6 +1209,22 @@ body {
 }
 .nav__overlay.active {
   transform: translateY(0);
+}
+.nav__overlay.gohr .header__nav-module img {
+  filter: invert(22%) sepia(95%) saturate(7489%) hue-rotate(260deg) brightness(98%) contrast(103%);
+}
+.nav__overlay.gohr .header__nav-module:hover {
+  background: #6425fd;
+}
+.nav__overlay.gohr .header__nav-module:hover h3 {
+  color: #fff;
+}
+.nav__overlay.gohr .header__nav-module:hover p {
+  color: #fff;
+  opacity: 0.8;
+}
+.nav__overlay.gohr .header__nav-module:hover img {
+  filter: brightness(0) invert(1);
 }
 
 .header__nav {

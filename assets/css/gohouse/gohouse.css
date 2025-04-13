@@ -149,7 +149,6 @@ body {
   width: 100%;
   z-index: 999;
   background: #fff;
-  border-bottom: 1px solid #eaecf0;
 }
 .header.gohr {
   background: #392b9c;
@@ -185,6 +184,42 @@ body {
   filter: brightness(0) invert(1);
 }
 .header.gomed .header__phone {
+  color: #fff;
+}
+.header.retail {
+  background: #084fb9;
+}
+.header.retail .header__logo {
+  filter: brightness(0) invert(1);
+  font-size: 32px;
+  font-weight: 700;
+}
+.header.retail .header__lang {
+  background: #1960ca;
+  color: #fff;
+}
+.header.retail .header__lang img {
+  filter: brightness(0) invert(1);
+}
+.header.retail .header__phone {
+  color: #fff;
+}
+.header.construction {
+  background: #399919;
+}
+.header.construction .header__logo {
+  filter: brightness(0) invert(1);
+  font-size: 32px;
+  font-weight: 700;
+}
+.header.construction .header__lang {
+  background: #47a727;
+  color: #fff;
+}
+.header.construction .header__lang img {
+  filter: brightness(0) invert(1);
+}
+.header.construction .header__phone {
   color: #fff;
 }
 .header__container {
@@ -275,6 +310,38 @@ body {
   opacity: 0.8;
 }
 .nav__overlay.gohr .header__nav-module:hover img {
+  filter: brightness(0) invert(1);
+}
+.nav__overlay.retail .header__nav-module img {
+  filter: invert(18%) sepia(97%) saturate(2516%) hue-rotate(210deg) brightness(93%) contrast(94%);
+}
+.nav__overlay.retail .header__nav-module:hover {
+  background: #084fb9;
+}
+.nav__overlay.retail .header__nav-module:hover h3 {
+  color: #fff;
+}
+.nav__overlay.retail .header__nav-module:hover p {
+  color: #fff;
+  opacity: 0.8;
+}
+.nav__overlay.retail .header__nav-module:hover img {
+  filter: brightness(0) invert(1);
+}
+.nav__overlay.construction .header__nav-module img {
+  filter: invert(44%) sepia(74%) saturate(516%) hue-rotate(60deg) brightness(95%) contrast(95%);
+}
+.nav__overlay.construction .header__nav-module:hover {
+  background: #399919;
+}
+.nav__overlay.construction .header__nav-module:hover h3 {
+  color: #fff;
+}
+.nav__overlay.construction .header__nav-module:hover p {
+  color: #fff;
+  opacity: 0.8;
+}
+.nav__overlay.construction .header__nav-module:hover img {
   filter: brightness(0) invert(1);
 }
 
@@ -475,6 +542,7 @@ body {
   padding: 35px 100px;
   position: relative;
   margin: 50px 0 0 0;
+  overflow: visible;
 }
 .promo__content {
   display: flex;
@@ -1159,7 +1227,7 @@ body {
 }
 .trust h2 {
   font-weight: 700;
-  font-size: 45px;
+  font-size: 42px;
   line-height: 125%;
   color: #101828;
   margin: 0 0 48px;

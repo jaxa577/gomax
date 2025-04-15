@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="/assets/css/modal/modal.css" />
+  </head>
+  <body>
+    <main>
+      <button onclick="toggleModal()">Toggle modal</button>
+
+      <div class="modal">
+        <div class="container">
+          <div class="modal__content">
+            <div class="modal__header">
+              <h2>Modal title</h2>
+              <button onclick="toggleModal()">
+                <img
+                  src="/assets/icons/remove.svg"
+                  alt="" />
+              </button>
+            </div>
+
+            <div class="modal__body">
+              Modal body
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste sunt tempora, cum quasi et nemo ex maxime, temporibus nam, dolorum illum delectus rem aperiam animi. Nesciunt consectetur itaque labore quidem saepe laborum sed, laudantium debitis placeat aspernatur blanditiis eius doloremque non suscipit veniam ducimus consequatur consequuntur aliquid. Quisquam, impedit et!</p>
+            </div>
+
+            <div class="modal__footer">
+              <button
+                onclick="toggleModal()"
+                class="cancel">
+                Cancel
+              </button>
+              <button class="confirm">Confirm</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script>
+      const modal = document.querySelector(".modal");
+
+      let modalState = false;
+      const toggleModal = () => {
+        modalState = !modalState;
+        if (modalState) {
+          modal.classList.toggle("display");
+          setTimeout(() => {
+            modal.classList.toggle("active-transition");
+          }, 100);
+          return;
+        }
+        modal.classList.toggle("active-transition");
+        setTimeout(() => {
+          modal.classList.toggle("display");
+        }, 100);
+      };
+    </script>
+  </body>
+</html>

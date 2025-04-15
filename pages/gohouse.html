@@ -890,7 +890,20 @@
         </div>
       </div>
     </footer>
+    <script>
+      const faqCards = document.querySelectorAll(".faqcard");
 
+      faqCards.forEach((card) => {
+        card.addEventListener("click", () => {
+          if (card.classList.contains("opened")) {
+            card.classList.remove("opened");
+          } else {
+            faqCards.forEach((c) => c.classList.remove("opened"));
+            card.classList.add("opened");
+          }
+        });
+      });
+    </script>
     <script src="/assets/js/gomed.js"></script>
     <script src="/assets//js/swiper-bundle.min.js"></script>
     <script src="/assets/js/index.js"></script>

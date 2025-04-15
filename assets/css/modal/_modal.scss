@@ -23,6 +23,12 @@
     opacity: 1;
   }
 }
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
 .modal__content {
   max-width: 800px;
   background-color: #fff;
